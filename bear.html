@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html,body {
+    height: 100%;
+
+    }
+    
+
+
+
+
+  .asd1{
+  width: 300px;height: 300px;border-radius: 100%;
+  background: #000;position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  
+  .asd1::before{
+    content: "";
+    width: 80px;height: 80px;border-radius: 100%;
+    background: red;position: absolute;
+    top: 40%;left: -7%;
+  }
+  
+  .asd1::after{
+    content: "";
+    width: 80px;height: 80px;border-radius: 100%;
+    background: red;position: absolute;
+    top: 40%;left: 80%;
+  }
+.asd2{
+width: 30px;height: 30px;border-radius: 100%;
+background: #fff;border: 10px solid #000;
+position: absolute;
+top: .5rem;left: 1rem;
+}
+.asd2::before{
+  content: "";
+  width: 30px;height: 30px;border-radius: 100%;
+background: #fff;border: 10px solid #000;
+position: absolute;
+top: -0.5rem;left: 13.25rem;
+}
+.asd2::after{
+content: "";
+width: 40px;height: 40px;border-radius: 100%;
+background: #000;border: 10px solid #fff;
+position: absolute;
+top: 3rem;left: 2rem;
+
+}
+.asd3{
+  width: 120px;height: 80px;border-radius: 50%;
+  background: #fff;border: 1px solid #fff;
+  position: absolute;
+  top: 8rem;left: 5.5rem;
+}
+
+.asd3::before{
+  content: "";
+  width: 40px;height: 40px;border-radius: 100%;
+  background: #000;border: 10px solid #fff;
+  position: absolute;
+  top: -4rem;left: 5.5rem;
+}
+.asd3::after{
+  content: "";
+  width: 25px;height: 15px;border-radius: 50%;
+  background: #000;border: 1px solid #000;
+  position: absolute;
+  top: 1rem;left: 3rem;
+}
+
+.asd4{
+width: 80px;height: 20px;border-radius: 50%;
+background:#000;border: 1px solid #000;
+position: absolute;
+top: 11rem;left: 6.75rem;
+}
+.asd4::before{
+  content: "";
+  width: 30px;height: 40px;
+  background: #fff;border: 1px solid #fff;
+  transform: skewX(-45deg);
+  position: absolute;
+  top: 3rem;left: 3rem;
+}
+.asd4::after{
+  content: "";
+  width: 30px;height: 40px;
+  background: #fff;border: 1px solid #fff;
+  transform: skewX(45deg);
+  position: absolute;
+  top: 3rem;left: 0rem;
+}
+  </style>
+</head>
+<body>
+  <div class="asd1">
+    <div class="asd2"></div>
+    <div class="asd3"></div>
+    <div class="asd4"></div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ *{
+  padding: 0;
+  margin: 0;
+  }
+  html, body{
+  height: 100%;
+  font-family:"微軟正黑體" ;}
+
+  .asd{
+    line-height: 180px;
+    width: 400px;height: 100px;
+    background:linear-gradient(#fff,#bbb,#fff);
+    color:#aaa;
+    border: 1px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .asd::before{
+    content: '';
+    background:linear-gradient(#fff,#bbb,#fff);
+    position: absolute;
+    top: 0%;left:-30%;
+width: 51px;height: 100px;border: 1px solid #000;
+  }
+  .asd::after{
+    content: '';
+    background:linear-gradient(#fff,#ddd,#fff);
+    position: absolute;
+    top: 10%;left:-17%;
+width: 67px;height: 80px;border: 1px solid #000;
+  }
+  .sdf{
+    width: 150px;height: 100px;
+    background:linear-gradient(#ffff37,#ffffb9,#ffff37);
+    border-left: 40px solid #000;
+    border-right: 1px solid #000;
+    position: absolute;
+    top: 0%;left:53%;    
+  }
+  .sdf::before{
+    content: '';
+    width: 40px;height: 60px;border: 1px solid #000;
+    background:linear-gradient(#fff,#ddd,#fff);
+    position: absolute;
+    top: 20%;left:100%;
+  }
+  .sdf::after{
+    content: '';
+    width: 100px;height: 1px;
+    background:#bbb;
+    position: absolute;
+    top: 50%;left:128%;
+  }
+  .ruler{
+    width: 400px; height: 10px;
+    background-image: repeating-linear-gradient(90deg, #000 , #000 1px, transparent 0, transparent 10px);
+    background-size:  10px;
+    position: absolute;
+    top: 0%;left:0%;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="asd">
+    Made in Taiwan
+    <div class="sdf"> </div>
+    <div class="ruler"></div>
+  </div>
+</body>
+</html>
